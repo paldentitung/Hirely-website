@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="w-full h-[80vh] relative">
         <img
           src={heroimage}
-          alt=""
+          alt="hero image"
           className="w-full h-full object-cover backdrop:backdrop-brightness-50 -z-10"
         />
         {/* overlay */}

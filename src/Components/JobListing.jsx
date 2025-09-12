@@ -1,7 +1,44 @@
 import React from "react";
+import JobCard from "./JobCard";
+import jobsData from "../Data/JobsData";
+import SecondaryButton from "./SecondaryButton";
+import { useState } from "react";
+import Title from "./Title";
 
 const JobListing = () => {
-  return <div>JobListing</div>;
+  const [showJobs, setShowJob] = useState(3);
+  return (
+    <div className="min-h-screen flex justify-center px-[10%] py-[5%] w-full    ">
+      <div className="w-full max-w-[1200px] p-2 ">
+        <div className="text-center mb-8">
+          <Title title="Jobs :" />
+        </div>
+
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-3">
+          {jobsData.slice(0, showJobs).map((job, index) => (
+            <JobCard job={job} key={index} />
+          ))}
+        </div>
+        <div
+          className="flex justify-center items-center mt-5
+        "
+        >
+          {showJobs <= jobsData.length && (
+            <SecondaryButton
+              name="see more jobs"
+              onClick={() => setShowJob(showJobs + 3)}
+            />
+          )}
+          {showJobs >= jobsData.length && (
+            <SecondaryButton
+              name="see Less jobs"
+              onClick={() => setShowJob(showJobs - 9)}
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default JobListing;
