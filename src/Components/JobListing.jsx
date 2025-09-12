@@ -6,7 +6,7 @@ import { useState } from "react";
 import Title from "./Title";
 
 const JobListing = () => {
-  const [showJobs, setShowJob] = useState(3);
+  const [showJobs, setShowJob] = useState(4);
   return (
     <div className="min-h-screen flex justify-center px-[10%] py-[5%] w-full    ">
       <div className="w-full max-w-[1200px] p-2 ">
@@ -14,7 +14,7 @@ const JobListing = () => {
           <Title title="Jobs :" />
         </div>
 
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-3">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-3 w-full">
           {jobsData.slice(0, showJobs).map((job, index) => (
             <JobCard job={job} key={index} />
           ))}
@@ -26,7 +26,7 @@ const JobListing = () => {
           {showJobs <= jobsData.length && (
             <SecondaryButton
               name="see more jobs"
-              onClick={() => setShowJob(showJobs + 3)}
+              onClick={() => setShowJob(showJobs + 4)}
             />
           )}
           {showJobs >= jobsData.length && (
