@@ -4,6 +4,7 @@ import JobAdd from "./Pages/JobAdd";
 import Register from "./Pages/Register";
 import JobDetails from "./Pages/JobDetails";
 import NotFountPage from "./Pages/NotFountPage";
+import Login from "./Components/Login";
 import MainLayout from "./Pages/MainLayout";
 import { Route, Routes } from "react-router-dom";
 

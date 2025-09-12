@@ -8,7 +8,7 @@ import Title from "./Title";
 const JobListing = () => {
   const [showJobs, setShowJob] = useState(4);
   return (
-    <div className="min-h-screen flex justify-center px-[10%] py-[5%] w-full    ">
+    <div className="h-auto lg:h-[80vh] flex justify-center px-[10%] py-[5%] w-full    ">
       <div className="w-full max-w-[1200px] p-2 ">
         <div className="text-center mb-8">
           <Title title="Jobs :" />
