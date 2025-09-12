@@ -1,5 +1,3 @@
-import React from "react";
-import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import Jobs from "./Pages/Jobs";
 import JobAdd from "./Pages/JobAdd";
