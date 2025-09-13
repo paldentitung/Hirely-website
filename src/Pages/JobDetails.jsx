@@ -5,7 +5,7 @@ import Title from "../Components/Title";
 import PrimaryButton from "../Components/PrimaryButton";
 import SecondaryButton from "../Components/SecondaryButton";
 import { BiLocationPlus } from "react-icons/bi";
-import { useState } from "react";
+import IsExpanded from "../Components/IsExpanded";
 const JobDetails = () => {
   const { id } = useParams();
   // find the job object by matching ID
@@ -20,7 +20,7 @@ const JobDetails = () => {
         <div className="w-3/4 shadow-md  p-4 rounded-lg flex flex-col space-y-5 ">
           <div className=" border-b border-gray-400 py-2 flex flex-col gap-2 ">
             <Title title={selectedJob.company.name} />
-            <div>{selectedJob.company.description}</div>
+            <IsExpanded description={selectedJob.company.description} />{" "}
           </div>
           <div className="flex flex-col gap-2  border-gray-400 border-b py-2 ">
             <div className="text-gray-600">{selectedJob.type}</div>
