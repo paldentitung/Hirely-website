@@ -12,6 +12,10 @@ const jobsData = [
       description:
         "CodeCrafters Pvt. Ltd. is a leading software development company in Nepal, specializing in building modern, scalable, and responsive web applications for international clients. With a strong focus on innovation and quality, we empower businesses to embrace digital transformation. Our team of developers, designers, and analysts collaborates to deliver cutting-edge solutions that drive measurable results.",
     },
+    postedDate: "Sep 01, 2025",
+    applicants: 5,
+    status: "Active",
+    expiryDate: "Oct 01, 2025",
   },
   {
     id: "10",
@@ -26,6 +30,10 @@ const jobsData = [
       description:
         "DocuTech Nepal is a documentation and publishing company that delivers high-quality technical content for software and technology firms. We specialize in API documentation, user manuals, and developer guides that make complex systems easier to understand. With a commitment to clarity and precision, we help organizations communicate effectively with their users and clients.",
     },
+    postedDate: "Aug 28, 2025",
+    applicants: 3,
+    status: "Active",
+    expiryDate: "Sep 28, 2025",
   },
   {
     id: "cd52",
@@ -39,6 +47,10 @@ const jobsData = [
       description:
         "Pixel Labs is a fast-growing startup that blends creativity with technology to design impactful digital products. We specialize in UI/UX design, branding, and product innovation. Our team thrives on experimentation, making Pixel Labs a perfect space for interns to explore, learn, and contribute to meaningful design projects.",
     },
+    postedDate: "Sep 05, 2025",
+    applicants: 0,
+    status: "Active",
+    expiryDate: "Sep 30, 2025",
   },
   {
     id: "18a7",
@@ -52,6 +64,10 @@ const jobsData = [
       description:
         "CreativeNest is an innovative digital agency providing design and development solutions to startups and enterprises. Our focus is on creating visually appealing and intuitive user experiences that strengthen brand identity. We offer mentorship-driven internship programs designed to nurture young designers into future professionals.",
     },
+    postedDate: "Sep 07, 2025",
+    applicants: 1,
+    status: "Active",
+    expiryDate: "Oct 05, 2025",
   },
   {
     id: "1b9a",
@@ -65,6 +81,10 @@ const jobsData = [
       description:
         "UIWorks Studio is a boutique design firm dedicated to delivering tailored user experiences for mobile and web platforms. We believe in blending aesthetics with functionality to craft designs that truly engage users. Our studio also offers internships to guide new talent through the fundamentals of professional UI/UX design.",
     },
+    postedDate: "Sep 02, 2025",
+    applicants: 0,
+    status: "Active",
+    expiryDate: "Sep 29, 2025",
   },
   {
     id: "6d58",
@@ -79,6 +99,10 @@ const jobsData = [
       description:
         "Visionary Designs is a contract-based design company that partners with businesses to create cutting-edge user experiences. We specialize in UI/UX design, prototyping, and product branding, working closely with development teams to bring concepts to life. Our reputation is built on delivering elegant, functional, and impactful design solutions across industries.",
     },
+    postedDate: "Aug 25, 2025",
+    applicants: 2,
+    status: "Closed",
+    expiryDate: "Sep 15, 2025",
   },
   {
     id: "917f",
@@ -93,6 +117,10 @@ const jobsData = [
       description:
         "TestPro Solutions is a quality assurance and software testing company committed to delivering reliable, bug-free applications. Our team ensures that every digital product meets the highest standards of performance, usability, and security. With a client-first approach, we partner with startups and enterprises to deliver trustworthy solutions across industries.",
     },
+    postedDate: "Sep 03, 2025",
+    applicants: 7,
+    status: "Active",
+    expiryDate: "Oct 03, 2025",
   },
   {
     id: "cc79",
@@ -107,6 +135,10 @@ const jobsData = [
       description:
         "TestPro Solutions is a quality assurance and software testing company committed to delivering reliable, bug-free applications. Our team ensures that every digital product meets the highest standards of performance, usability, and security. With a client-first approach, we partner with startups and enterprises to deliver trustworthy solutions across industries.",
     },
+    postedDate: "Sep 06, 2025",
+    applicants: 4,
+    status: "Active",
+    expiryDate: "Oct 06, 2025",
   },
   {
     id: "5500",
@@ -121,6 +153,10 @@ const jobsData = [
       description:
         "CloudSphere Technologies is a global leader in cloud computing solutions, enabling enterprises to transition seamlessly to scalable and secure cloud infrastructures. We specialize in AWS, Azure, and Google Cloud, helping businesses optimize performance while reducing operational costs. Our vision is to create future-ready cloud ecosystems that empower digital growth and innovation.",
     },
+    postedDate: "Aug 20, 2025",
+    applicants: 6,
+    status: "Active",
+    expiryDate: "Sep 20, 2025",
   },
   {
     id: "0c3f",
@@ -135,6 +171,10 @@ const jobsData = [
       description:
         "CloudSphere Technologies is a global leader in cloud computing solutions, enabling enterprises to transition seamlessly to scalable and secure cloud infrastructures. We specialize in AWS, Azure, and Google Cloud, helping businesses optimize performance while reducing operational costs. Our vision is to create future-ready cloud ecosystems that empower digital growth and innovation.",
     },
+    postedDate: "Aug 21, 2025",
+    applicants: 8,
+    status: "Closed",
+    expiryDate: "Sep 18, 2025",
   },
   {
     id: "7f3b",
@@ -149,6 +189,10 @@ const jobsData = [
       description:
         "CodeCrafters Pvt. Ltd. is a leading software development company in Nepal, specializing in building modern, scalable, and responsive web applications for international clients. With a strong focus on innovation and quality, we empower businesses to embrace digital transformation. Our team of developers, designers, and analysts collaborates to deliver cutting-edge solutions that drive measurable results.",
     },
+    postedDate: "Sep 04, 2025",
+    applicants: 2,
+    status: "Active",
+    expiryDate: "Oct 04, 2025",
   },
   {
     id: "f2e8",
@@ -163,6 +207,10 @@ const jobsData = [
       description:
         "CodeCrafters Pvt. Ltd. is a leading software development company in Nepal, specializing in building modern, scalable, and responsive web applications for international clients. With a strong focus on innovation and quality, we empower businesses to embrace digital transformation. Our team of developers, designers, and analysts collaborates to deliver cutting-edge solutions that drive measurable results.",
     },
+    postedDate: "Sep 08, 2025",
+    applicants: 1,
+    status: "Active",
+    expiryDate: "Oct 08, 2025",
   },
   {
     id: "1756227233375",
@@ -177,11 +225,15 @@ const jobsData = [
       description:
         "CodeCrafters Pvt. Ltd. is a leading software development company in Nepal, specializing in building modern, scalable, and responsive web applications for international clients. With a strong focus on innovation and quality, we empower businesses to embrace digital transformation. Our team of developers, designers, and analysts collaborates to deliver cutting-edge solutions that drive measurable results.",
     },
+    postedDate: "Sep 09, 2025",
+    applicants: 0,
+    status: "Active",
+    expiryDate: "Oct 09, 2025",
   },
   {
     id: "1756307942881",
     title: "QA Engineer",
-    type: "remote",
+    type: "Remote",
     description:
       "Join our dynamic team to build responsive and interactive web interfaces using HTML, CSS, and JavaScript. Collaborate with senior developers and gain hands-on experience in modern frontend frameworks.",
     salary: "$70-80k/year",
@@ -191,6 +243,11 @@ const jobsData = [
       description:
         "TestPro Solutions is a quality assurance and software testing company committed to delivering reliable, bug-free applications. Our team ensures that every digital product meets the highest standards of performance, usability, and security. With a client-first approach, we partner with startups and enterprises to deliver trustworthy solutions across industries.",
     },
+    postedDate: "Sep 10, 2025",
+    applicants: 10,
+    status: "Active",
+    expiryDate: "Oct 10, 2025",
   },
 ];
+
 export default jobsData;
