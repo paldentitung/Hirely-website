@@ -6,12 +6,11 @@ import PrimaryButton from "../Components/PrimaryButton";
 import SecondaryButton from "../Components/SecondaryButton";
 import { BiLocationPlus } from "react-icons/bi";
 import IsExpanded from "../Components/IsExpanded";
-const JobDetails = () => {
+const JobDetails = ({ role }) => {
   const { id } = useParams();
   // find the job object by matching ID
   const selectedJob = jobsData.find((job) => job.id === id);
   // for later make it dynamic
-  const role = "user";
 
   return (
     <>

@@ -8,9 +8,9 @@ const NotFountPage = () => {
         <div className="text-2xl font-bold font-mono">
           Sorry , Page Not Found
         </div>
-        <p>
+        <div>
           <p>We're sorry, the page you are looking for does not exist.</p>
-        </p>
+        </div>
 
         <Link to="/home">
           <PrimaryButton name="Back Home" />

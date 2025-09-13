@@ -6,11 +6,11 @@ import { BsGoogle } from "react-icons/bs";
 import { BsApple } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-const Login = () => {
+const Login = ({ role, login }) => {
   const [showPassword, setShowPasword] = useState(false);
   return (
     <>
-      <div className=" w-full max-w-[400px] h-[450px] flex   items-center flex-col bg-white  rounded-lg  space-y-5 px-7 py-2 shadow-md shadow-[rgb(235,235,235)]">
+      <div className=" w-full max-w-[400px] flex   items-center flex-col bg-white  rounded-lg  space-y-5 px-7 py-2 shadow-md shadow-[rgb(235,235,235)]">
         {/*  */}
         <form action="" className="flex flex-col space-y-4 w-full ">
           <div className="flex flex-col">
@@ -42,13 +42,25 @@ const Login = () => {
               />
             </div>
           </div>
+
+          {role === "company" && (
+            <div>
+              <label htmlFor="company-name">Company Name:</label>
+              <input
+                type="text"
+                placeholder="Enter the company name"
+                name="company-name"
+                className=" border-gray-300 outline-0  w-full border-[1px] px-4 py-2 rounded-md"
+              />
+            </div>
+          )}
           <button
             className="bg-gray-800 text-white py-2 rounded-md transition-all duration-200 hover:cursor-pointer hover:shadow-sm hover:shadow-[rgba(0,0,0,0.5)]
           hover:bg-gray-900 active:opacity-50"
           >
             <Link to="/home" className="block">
               {" "}
-              Log in
+              {role === "user" ? "Login as user " : "login as company"}
             </Link>
           </button>
         </form>
@@ -70,7 +82,9 @@ const Login = () => {
 
         <div className="text-sm flex gap-2 border-b border-transparent hover:border-b-gray-800 hover:cursor-pointer">
           <span className="text-gray-500">Don't have an account yet?</span>
-          <Link className="">Sign Up</Link>
+          <Link className="" to="/resgister">
+            Sign Up
+          </Link>
         </div>
       </div>
     </>

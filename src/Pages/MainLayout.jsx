@@ -1,11 +1,11 @@
 import Navbar from "../Components/Navbar";
-const MainLayout = ({ children }) => {
+const MainLayout = ({ children, role }) => {
   return (
     <div>
       <div>
-        <Navbar />
+        <Navbar role={role} />
       </div>
-      <div>{children}</div>
+      <main>{children}</main>
     </div>
   );
 };

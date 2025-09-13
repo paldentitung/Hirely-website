@@ -5,27 +5,30 @@ import Register from "./Pages/Register";
 import JobDetails from "./Pages/JobDetails";
 import NotFountPage from "./Pages/NotFountPage";
 import Login from "./Components/Login";
+import SignUp from "./Components/SignUp";
+
 import MainLayout from "./Pages/MainLayout";
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
 const App = () => {
+  const [role, setRole] = useState(""); // global role
+  const [login, setLogin] = useState(true); // global login/signup selection
   return (
     <>
       <Routes>
-        <Route path="/" element={<Register />} />
-
         <Route
           path="/home"
           element={
-            <MainLayout>
-              <Home></Home>
+            <MainLayout role={role}>
+              <Home role={role} />
             </MainLayout>
           }
         />
         <Route
           path="/jobs"
           element={
-            <MainLayout>
+            <MainLayout role={role}>
               <Jobs />
             </MainLayout>
           }
@@ -33,7 +36,7 @@ const App = () => {
         <Route
           path="/add-job"
           element={
-            <MainLayout>
+            <MainLayout role={role}>
               <JobAdd />
             </MainLayout>
           }
@@ -41,7 +44,7 @@ const App = () => {
         <Route
           path="*"
           element={
-            <MainLayout>
+            <MainLayout role={role}>
               <NotFountPage />
             </MainLayout>
           }
@@ -50,9 +53,22 @@ const App = () => {
         <Route
           path="/jobs/:id"
           element={
-            <MainLayout>
-              <JobDetails />
+            <MainLayout role={role}>
+              <JobDetails role={role} />
             </MainLayout>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route
+          path="/"
+          element={
+            <Register
+              role={role}
+              setRole={setRole}
+              login={login}
+              setLogin={setLogin}
+            />
           }
         />
       </Routes>
