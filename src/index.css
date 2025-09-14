@@ -1,1 +1,5 @@
 @import "tailwindcss";
+/* in your global CSS or index.css */
+html {
+  overflow-y: scroll;
+}
