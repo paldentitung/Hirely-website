@@ -3,3 +3,17 @@
 html {
   overflow-y: scroll;
 }
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
