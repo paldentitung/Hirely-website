@@ -248,6 +248,114 @@ const jobsData = [
     status: "Active",
     expiryDate: "Oct 10, 2025",
   },
+  {
+    id: "a103",
+    title: "Project Coordinator",
+    type: "Contract",
+    description:
+      "Coordinate project activities, monitor timelines, and assist in reporting to ensure projects are delivered on time.",
+    salary: "$30-40k/year",
+    location: "Canada",
+    company: {
+      name: "Global Projects Inc.",
+      description:
+        "Global Projects Inc. provides project management solutions for international clients in IT, construction, and consulting sectors.",
+    },
+    postedDate: "Sep 14, 2025",
+    applicants: 1,
+    status: "Active",
+    expiryDate: "Oct 14, 2025",
+  },
+  {
+    id: "a104",
+    title: "HR Specialist",
+    type: "Full Time",
+    description:
+      "Manage recruitment, employee relations, and performance evaluation processes to support organizational growth.",
+    salary: "$45-60k/year",
+    location: "UK",
+    company: {
+      name: "PeopleFirst Ltd.",
+      description:
+        "PeopleFirst Ltd. is an HR consulting firm that provides talent acquisition, training, and workforce management services to companies across Europe.",
+    },
+    postedDate: "Sep 15, 2025",
+    applicants: 3,
+    status: "Active",
+    expiryDate: "Oct 15, 2025",
+  },
+  {
+    id: "a105",
+    title: "Content Writer",
+    type: "Remote",
+    description:
+      "Create engaging content for blogs, websites, and social media, ensuring consistency with brand voice and style guidelines.",
+    salary: "$20-30k/year",
+    location: "Australia",
+    company: {
+      name: "WriteWise Co.",
+      description:
+        "WriteWise Co. provides content marketing solutions, delivering high-quality writing for businesses and digital agencies globally.",
+    },
+    postedDate: "Sep 16, 2025",
+    applicants: 5,
+    status: "Active",
+    expiryDate: "Oct 16, 2025",
+  },
+  {
+    id: "a106",
+    title: "Mechanical Engineer",
+    type: "Full Time",
+    description:
+      "Design, test, and implement mechanical systems and machinery while ensuring compliance with safety and quality standards.",
+    salary: "$70-90k/year",
+    location: "India",
+    company: {
+      name: "MechWorks Pvt. Ltd.",
+      description:
+        "MechWorks specializes in mechanical engineering solutions for automotive, manufacturing, and energy industries.",
+    },
+    postedDate: "Sep 17, 2025",
+    applicants: 2,
+    status: "Active",
+    expiryDate: "Oct 17, 2025",
+  },
+  {
+    id: "a107",
+    title: "Financial Analyst",
+    type: "Full Time",
+    description:
+      "Analyze financial data, prepare reports, and provide recommendations for investment, budgeting, and financial planning.",
+    salary: "$65-85k/year",
+    location: "Singapore",
+    company: {
+      name: "FinancePro Ltd.",
+      description:
+        "FinancePro Ltd. offers financial consulting services to help businesses and individuals make data-driven financial decisions.",
+    },
+    postedDate: "Sep 18, 2025",
+    applicants: 6,
+    status: "Active",
+    expiryDate: "Oct 18, 2025",
+  },
+  {
+    id: "a108",
+    title: "Customer Support Executive",
+    type: "Part Time",
+    description:
+      "Provide excellent customer service, handle inquiries, and resolve issues promptly across multiple communication channels.",
+    salary: "$15-20k/year",
+    location: "USA",
+    company: {
+      name: "HelpDesk Solutions",
+      description:
+        "HelpDesk Solutions provides outsourced customer support services for companies in IT, e-commerce, and telecommunication sectors.",
+    },
+    postedDate: "Sep 19, 2025",
+    applicants: 7,
+    status: "Active",
+    expiryDate: "Oct 19, 2025",
+  },
 ];
 
 export default jobsData;
