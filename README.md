@@ -20,17 +20,22 @@ Companies can post jobs, and users can browse and view job details.
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/yourusername/hirely.git
-cd hirely
+git clone git@github.com:paldentitung/Hirely-website.git
+cd Hirely-website
 npm install
 npm run dev
-📌 Tech Stack
+
+```
+
+## 📌 Tech Stack
+
 React + Vite
 
 Tailwind CSS
 
 React Router DOM
-```
+
+---
 
 ## 📂 Project Structure
 
@@ -40,13 +45,13 @@ React Router DOM
 │ ├── Data # Static jobs data  
 │ └── App.jsx # Main app routes
 
+---
+
 ## 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
-```
-
-```
+---
 
 ## 🔮 Future Improvements
 
@@ -55,10 +60,16 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - Improve search & filter
 - Pagination for job listings
 
+---
+
+## 📬 Contact
+
+- Email: your.email@example.com
+- GitHub: [paldentitung](https://github.com/paldentitung)
+
 ## 👨‍💻 Author
 
-- [Palden Dorje Titung](https://github.com/paldentitung)
+- [Palden Dorje Titung](https://github.com/paldentitung)  
+  Full-stack enthusiast building interactive and user-friendly web applications. Passionate about React, JavaScript, and creating practical projects for real-world use.
 
-```
-
-```
+---
