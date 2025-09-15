@@ -54,7 +54,7 @@ const JobAdd = ({ jobs, setJobs }) => {
       </div>
 
       <Modal setOpenModal={setOpenModal} openModal={openModal}>
-        <div className="flex flex-col justify-center items-center space-y-5">
+        <div className="flex flex-col justify-center items-center space-y-5 bg-white text-black p-2 rounded-md h-32 w-72">
           <span>Do you want to add this job?</span>
           <div className="flex gap-2">
             <PrimaryButton name="Go back" onClick={cancelAddJob} />

@@ -1,6 +1,7 @@
 import React from "react";
 import heroimage from "../assets/hero.jpg";
 import PrimaryButton from "./PrimaryButton";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <>
@@ -19,7 +20,9 @@ const Hero = () => {
             Connect with top companies, discover exciting opportunities, and
             grow your career.
           </div>
-          <PrimaryButton name="See Jobs" />
+          <Link to="/jobs">
+            <PrimaryButton name="See Jobs" />
+          </Link>
         </div>
       </div>
     </>
