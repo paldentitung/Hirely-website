@@ -14,6 +14,7 @@ import { useState } from "react";
 const App = () => {
   const [role, setRole] = useState(""); // global role
   const [login, setLogin] = useState(true); // global login/signup selection
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <Routes>
@@ -37,7 +38,7 @@ const App = () => {
           path="/add-job"
           element={
             <MainLayout role={role}>
-              <JobAdd />
+              <JobAdd openModal={openModal} setOpenModal={setOpenModal} />
             </MainLayout>
           }
         />

@@ -41,8 +41,12 @@ const JobDetails = ({ role }) => {
             </div>
             <div className="flex flex-col   py-2 ">
               <h3 className="font-semibold">Note*</h3>
-              <p className="text-gray-500">{selectedJob.postedDate}</p>
-              <p className="text-gray-500">{selectedJob.expiryDate}</p>
+              <p className="text-gray-500">
+                Posted date:{selectedJob.postedDate}
+              </p>
+              <p className="text-gray-500">
+                Expired date:{selectedJob.expiryDate}
+              </p>
             </div>
           </div>
         </div>
@@ -56,9 +60,7 @@ const JobDetails = ({ role }) => {
               <p>
                 <span className="font-medium">Posted:</span> Sep 10, 2025
               </p>
-              <p>
-                <span className="font-medium">Applicants:</span> 12
-              </p>
+
               <span className="inline-block mt-2 px-2 py-1 text-xs rounded-full bg-green-100 text-green-600">
                 Active
               </span>

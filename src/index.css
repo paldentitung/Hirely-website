@@ -2,6 +2,7 @@
 /* in your global CSS or index.css */
 html {
   overflow-y: scroll;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .marquee {
@@ -16,4 +17,8 @@ html {
   100% {
     transform: translateX(-100%);
   }
+}
+input,
+textarea {
+  outline: none;
 }

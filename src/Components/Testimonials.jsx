@@ -2,7 +2,7 @@ import React from "react";
 import TestimonialsCard from "./TestimonialsCard";
 import TestimonialsData from "../Data/TestimonialsData";
 import Title from "./Title";
-import { TiLeaf } from "react-icons/ti";
+
 const Testimonials = () => {
   return (
     <>
