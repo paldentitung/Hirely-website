@@ -64,7 +64,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## 📬 Contact
 
-- Email: your.email@example.com
+- Email:paldendorjetitung@gmail.com
 - GitHub: [paldentitung](https://github.com/paldentitung)
 
 ## 👨‍💻 Author
