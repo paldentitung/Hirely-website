@@ -6,15 +6,23 @@ import JobDetails from "./Pages/JobDetails";
 import NotFountPage from "./Pages/NotFountPage";
 import Login from "./Components/Login";
 import SignUp from "./Components/SignUp";
-
+import jobsData from "./Data/JobsData";
 import MainLayout from "./Pages/MainLayout";
 import { Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
-  const [role, setRole] = useState(""); // global role
-  const [login, setLogin] = useState(true); // global login/signup selection
+  const [role, setRole] = useState(() => localStorage.getItem("role") || "");
+  const [login, setLogin] = useState(true);
   const [openModal, setOpenModal] = useState(false);
+  const [jobs, setJobs] = useState(jobsData);
+
+  useEffect(() => {
+    if (role) {
+      localStorage.setItem("role", role);
+    }
+  }, [role]);
+
   return (
     <>
       <Routes>
@@ -30,7 +38,7 @@ const App = () => {
           path="/jobs"
           element={
             <MainLayout role={role}>
-              <Jobs />
+              <Jobs jobs={jobs} setJobs={setJobs} />
             </MainLayout>
           }
         />
@@ -38,7 +46,7 @@ const App = () => {
           path="/add-job"
           element={
             <MainLayout role={role}>
-              <JobAdd openModal={openModal} setOpenModal={setOpenModal} />
+              <JobAdd jobs={jobs} setJobs={setJobs} />
             </MainLayout>
           }
         />
@@ -55,7 +63,7 @@ const App = () => {
           path="/jobs/:id"
           element={
             <MainLayout role={role}>
-              <JobDetails role={role} />
+              <JobDetails role={role} jobs={jobs} setJobs={setJobs} />
             </MainLayout>
           }
         />
