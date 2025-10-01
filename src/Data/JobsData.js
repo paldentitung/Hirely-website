@@ -325,6 +325,7 @@ const jobsData = [
     title: "Financial Analyst",
     type: "Full Time",
     description:
+
       "Analyze financial data, prepare reports, and provide recommendations for investment, budgeting, and financial planning.",
     salary: "$65-85k/year",
     location: "Singapore",

@@ -5,6 +5,17 @@ import { FaUserPlus } from "react-icons/fa";
 import { FaBuilding } from "react-icons/fa";
 
 const Register = ({ role, setRole, login, setLogin }) => {
+  const signup = (e) => {
+    e.preventDefault();
+
+    // 1️⃣ Collect form data
+    const userData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      password: e.target.password.value,
+    };
+    localStorage.setItem("signedUp", "true");
+  };
   return (
     <div className="bg-gray-100 min-h-screen flex justify-center items-center flex-col">
       {!role && (

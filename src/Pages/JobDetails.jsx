@@ -1,19 +1,23 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Title from "../Components/Title";
 import PrimaryButton from "../Components/PrimaryButton";
 import SecondaryButton from "../Components/SecondaryButton";
 import { BiLocationPlus } from "react-icons/bi";
 import IsExpanded from "../Components/IsExpanded";
 
-const JobDetails = ({ jobs, role }) => {
+const JobDetails = ({ jobs, role, handleDeletedJob }) => {
   const { id } = useParams();
   const selectedJob = jobs.find((job) => job.id === id);
 
   if (!selectedJob) {
     return <div className="text-center mt-10">Job not found</div>;
   }
-
+  const navigate = useNavigate();
+  const handleDelete = () => {
+    handleDeletedJob(selectedJob.id);
+    navigate("/jobs");
+  };
   return (
     <div className="w-full max-w-[1200px] mt-6 mx-auto flex gap-6 flex-col lg:flex-row p-2 md:p-[3%]">
       {/* Job Info */}
@@ -67,8 +71,13 @@ const JobDetails = ({ jobs, role }) => {
               Active
             </span>
           </div>
-          <SecondaryButton name="Edit Job" />
-          <PrimaryButton name="Delete" />
+          <SecondaryButton
+            name="Edit Job"
+            onClick={() =>
+              navigate("/add-job", { state: { jobToEdit: selectedJob } })
+            }
+          />
+          <PrimaryButton name="Delete" onClick={handleDelete} />
         </div>
       )}
     </div>

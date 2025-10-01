@@ -12,15 +12,20 @@ import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const App = () => {
+  // Initialize role from localStorage
   const [role, setRole] = useState(() => localStorage.getItem("role") || "");
   const [login, setLogin] = useState(true);
   const [openModal, setOpenModal] = useState(false);
   const [jobs, setJobs] = useState(jobsData);
 
+  const handleDeletedJob = (id) => {
+    const updateJobs = jobs.filter((job) => job.id !== id);
+    setJobs(updateJobs);
+  };
+
+  // Save role to localStorage whenever it changes
   useEffect(() => {
-    if (role) {
-      localStorage.setItem("role", role);
-    }
+    localStorage.setItem("role", role);
   }, [role]);
 
   return (
@@ -58,17 +63,21 @@ const App = () => {
             </MainLayout>
           }
         />
-
         <Route
           path="/jobs/:id"
           element={
             <MainLayout role={role}>
-              <JobDetails role={role} jobs={jobs} setJobs={setJobs} />
+              <JobDetails
+                role={role}
+                jobs={jobs}
+                setJobs={setJobs}
+                handleDeletedJob={handleDeletedJob}
+              />
             </MainLayout>
           }
         />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signup" element={<SignUp role={role} />} />
         <Route
           path="/"
           element={

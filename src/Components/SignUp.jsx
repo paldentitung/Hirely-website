@@ -8,6 +8,7 @@ const SignUp = ({ role }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     navigate("/home");
   };
 
@@ -30,7 +31,7 @@ const SignUp = ({ role }) => {
         </span>
       </div>
 
-      {/* ✅ form with required works now */}
+      {/*  form with required works now */}
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-full ">
         <div className="flex flex-col">
           <label htmlFor="Email">Email address:</label>
